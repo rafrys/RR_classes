@@ -7,6 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+#install.packages("reticulate")
 library(reticulate)
 library(chron)
 #py_install("pandas")
@@ -167,7 +168,7 @@ plot(pressure)
 
 You can also use Python within the RMarkdown document like so:
 
-```{python}
+```{python eval=FALSE, include=FALSE}
 import pandas
 flights = pandas.read_csv("Data/flights.csv")
 flights = flights[flights['dest'] == "ORD"]
@@ -175,7 +176,7 @@ flights = flights[['carrier', 'dep_delay', 'arr_delay']]
 flights = flights.dropna()
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 library(ggplot2)
 ggplot(py$flights, aes(carrier, arr_delay)) + geom_point() + geom_jitter()
 
