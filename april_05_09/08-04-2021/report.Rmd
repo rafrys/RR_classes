@@ -1,0 +1,22 @@
+---
+title: "Untitled"
+author: "Rafal Rysiejko"
+date: "8 04 2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Description
+
+Modern Family is an American mockumentary family sitcom television series created by *Christopher Lloyd* and *Steven Levitan* for the American Broadcasting Company. It ran for eleven seasons, from September 23, 2009, to April 8, 2020. It follows the lives of three diverse family set-ups in suburban Los Angeles, linked by patriarch *Jay Pritchett*.
+
+## Logo
+
+![title](Modernfamily.png)
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
